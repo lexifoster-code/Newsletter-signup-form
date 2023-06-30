@@ -1,5 +1,5 @@
-const subBtn = document.querySelector("submit");
-const dismissBtn = document.querySelector("dismiss");
+const subBtn = document.querySelector("#submit");
+const dismissBtn = document.querySelector("#dismiss");
 
 function submit() {
   // grabs the input value for email
@@ -31,5 +31,6 @@ function dismiss() {
   thanks.style.display = "none";
 }
 
-subBtn.addEventListener("click", submit());
-dismissBtn.addEventListener("click", dismiss());
+subBtn.addEventListener("click", submit);
+dismissBtn.addEventListener("click", dismiss);
+console.log("button clicked");
